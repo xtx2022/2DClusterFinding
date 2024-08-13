@@ -34,6 +34,16 @@ def get_high_resolution_image(_images_: list, _scale_: int = 2, zero_padding: in
     Input images: A list of low resolution images in np.arrays 
     Output images: A list of high resolution images in np.arrays 
     Model: Pretrained EDSR model with zero padding
+    Citation:
+    @misc{torchsr,
+        author = {Gabriel Gouvine},
+        title = {Super-Resolution Networks for Pytorch},
+        year = {2021},
+        publisher = {GitHub},
+        journal = {GitHub repository},
+        howpublished = {\\url{https://github.com/Coloquinte/torchSR}},
+        doi = {10.5281/zenodo.4868308}
+    }
     '''
     if num_of_images < 0:
         num_of_images = len(_images_)
