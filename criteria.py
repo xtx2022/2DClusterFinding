@@ -154,8 +154,16 @@ def compare_results(results: list, names: list = []) -> None:
         names = [''] * len(results)
 
     for i in range(len(results)):
-        print('result', i, ' large error:', len(results[i].large_error))
-        print('result', i, ' not found:', len(results[i].not_found))
+        large_error = len(results[i].large_error)
+        not_found = len(results[i].not_found)
+        print(names[i], 'Large Error:', large_error)
+        print(names[i], 'Not Found:', not_found)
+        true_total = int(sum(len(arr) for arr in results[i].rev_dist) / 3) # x, y, r
+        total_found = int(sum(len(arr) for arr in results[i].dist) / 3)
+        print(names[i], 'Actual Number of Clusters:', true_total)
+        print(names[i], 'Number of Found Clusters:', total_found)
+        print(names[i], 'Precision:', 1.0 - large_error / total_found)
+        print(names[i], 'Recall:', 1.0 - not_found / true_total)
                                         
     # Plot the histograms with specified border colors and transparent fills
     for i in range(len(results)):
