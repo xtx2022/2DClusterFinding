@@ -1,6 +1,6 @@
 ### 2D Cluster Finding with the Help of Enhanced Deep Residual Networks (EDSR)
 
-This paper presents a novel algorithm for 2D cluster finding utilizing Enhanced Deep Residual Networks (EDSR)[1]. The challenge of accurately identifying points within images is addressed by processing pixel matrices to locate clusters effectively. The algorithm follows a three-step process: identifying local maxima, clustering around these points, and calculating weighted averages to determine cluster centers.
+This work presents a novel algorithm for 2D cluster finding utilizing Enhanced Deep Residual Networks (EDSR)[1]. The challenge of accurately identifying points within images is addressed by processing pixel matrices to locate clusters effectively. The algorithm follows a three-step process: identifying local maxima, clustering around these points, and calculating weighted averages to determine cluster centers.
 
 ### Datasets
 
