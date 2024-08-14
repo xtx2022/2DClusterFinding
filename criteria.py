@@ -171,8 +171,8 @@ def compare_results(results: list, names: list = []) -> None:
     # Customize the plot
     plt.title('Histogram of Delta x')
     plt.xlabel('Value')
-    plt.ylabel('Frequency')
-    plt.legend(loc='upper right')  # Add a legend to differentiate the datasets
+    plt.ylabel('Probability Density')
+    plt.legend(loc='upper right', frameon=False)  # Add a legend to differentiate the datasets
     plt.show()
 
     # Plot the histograms
@@ -181,8 +181,8 @@ def compare_results(results: list, names: list = []) -> None:
     # Customize the plot
     plt.title('Histogram of Delta y')
     plt.xlabel('Value')
-    plt.ylabel('Frequency')
-    plt.legend(loc='upper right')  # Add a legend to differentiate the datasets
+    plt.ylabel('Probability Density')
+    plt.legend(loc='upper right', frameon=False)  # Add a legend to differentiate the datasets
     plt.show()
 
     # Plot the histograms
@@ -191,6 +191,6 @@ def compare_results(results: list, names: list = []) -> None:
     # Customize the plot
     plt.title('Histogram of Delta r')
     plt.xlabel('Value')
-    plt.ylabel('Frequency')
-    plt.legend(loc='upper right')  # Add a legend to differentiate the datasets
+    plt.ylabel('Probability Density')
+    plt.legend(loc='upper right', frameon=False)  # Add a legend to differentiate the datasets
     plt.show()
